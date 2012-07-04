@@ -304,8 +304,8 @@ class MainFrame(wx.Frame):
     def GetCursor(self, color):
         """ get cursor object with specified properties """
         image = wx.Image('glyphicons_234_brush.png', wx.BITMAP_TYPE_PNG)
-        #r, g, b = color.Get(False)
-        #image.SetRGBRect((0,20,10,25), r, g, b)
+        r, g, b = color.Get(False)
+        image.SetRGBRect((0,10,10,13), r, g, b)
         image.SetOptionInt(wx.IMAGE_OPTION_CUR_HOTSPOT_X, 1)
         image.SetOptionInt(wx.IMAGE_OPTION_CUR_HOTSPOT_Y, 22)
         cursor = wx.CursorFromImage(image)
