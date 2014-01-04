@@ -23,7 +23,7 @@ class ImagePanel(wx.Panel):
         self.SetBackgroundStyle(parent.GetBackgroundStyle())
 
         #this is a color chosen by a user, initialised with black
-        self.color = wx.Color(0, 0, 0, 255)
+        self.color = wx.Colour(0, 0, 0, 255)
 
         #indicates whether pancil tool is active
         self.pencil = False
